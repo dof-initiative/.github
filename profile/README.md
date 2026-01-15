@@ -24,7 +24,7 @@ The DOF addresses the need for reuse and modularity in hardware development. For
 
 Although the reference implementation tooling uses git, npm, and gradle, the methodology is tool-agnostic as to allow for migration to other version control, package management, and build tools.
 
-*Our approach was driven by feedback from the community. See our [user stories & community feedback](https://mach30.github.io/oshw-pm-user-stories)*.
+*Our approach was driven by feedback from the community. See our [user stories & community feedback](https://dof-initiative.github.io/oshw-pm-user-stories)*.
 
 ---
 
@@ -38,17 +38,17 @@ Dr. Simmons discusses the Mach 30's Shepard Test Stand as a case study demonstra
 
 ## Projects in Development
 To advance the adoption and effectiveness of the DOF, we are actively developing and maintaining several complementary projects, each addressing a key aspect of DOF documentation, modeling, and tool support.
-- [Mach 30 Distributed OSHW Framework Workspace (Kasm Image)](https://github.com/Mach30/kasm-dof-workspace) - This Kasm workspace is set up with all DOF tooling. Use of the workspace recommended for Mach 30 volunteers and contributors, as it ensures a consistent, reproducible developer environment. 
-- [DOF Repository](https://github.com/Mach30/dof): The legacy implementation and reference for the Distributed OSHW Framework (DOF) methodology itself. This repository documents the principles, workflows, and best practices for DOF, serving both as a historical artifact and a foundation for ongoing tool and process development.
-- [yaml-datastore](https://github.com/Mach30/yaml-datastore): Tool for managing distributed YAML content. Developed to meet the needs of m30ml, which requires handling of data spread across multiple YAML files and directories.
-- [m30ml](https://github.com/Mach30/m30ml): A  lightweight YAML-based MBSE modeling language, loosely inspired by SysML v2, but intended for filesystem use. To support complex projects, m30ml relies on modular data management across multiple YAML files and directories, an approach made possible by the development of yaml-datastore.
-- [m30pm](https://github.com/Mach30/m30pm): Minimum viable tooling to support defining and executing the next generation of the methodology (to be defined using a domain specific LinkML schema). CRUDs schemas and data described in m30ml.
-- [linkml schema](https://github.com/Mach30/linkml-schema): Fork of linkml schema to make it compatible with npm.
+- [Mach 30 Distributed OSHW Framework Workspace (Kasm Image)](https://github.com/dof-initiative/kasm-dof-workspace) - This Kasm workspace is set up with all DOF tooling. Use of the workspace recommended for Mach 30 volunteers and contributors, as it ensures a consistent, reproducible developer environment. 
+- [DOF Repository](https://github.com/dof-initiative/dof-legacy): The legacy implementation and reference for the Distributed OSHW Framework (DOF) methodology itself. This repository documents the principles, workflows, and best practices for DOF, serving both as a historical artifact and a foundation for ongoing tool and process development.
+- [yaml-datastore](https://github.com/dof-initiative/yaml-datastore): Tool for managing distributed YAML content. Developed to meet the needs of m30ml, which requires handling of data spread across multiple YAML files and directories.
+- [m30ml](https://github.com/dof-initiative/m30ml): A  lightweight YAML-based MBSE modeling language, loosely inspired by SysML v2, but intended for filesystem use. To support complex projects, m30ml relies on modular data management across multiple YAML files and directories, an approach made possible by the development of yaml-datastore.
+- [m30pm](https://github.com/dof-initiative/m30pm): Minimum viable tooling to support defining and executing the next generation of the methodology (to be defined using a domain specific LinkML schema). CRUDs schemas and data described in m30ml.
+- [linkml schema](https://github.com/dof-initiative/linkml-schema): Fork of linkml schema to make it compatible with npm.
 
 ---
 
 ## Ready to build the future of OSHW?
-Contribute ideas, code, and feedback.  [**Join the Discussion on GitHub**](https://github.com/Mach30/dof/issues)
+Contribute ideas, code, and feedback.  [**Join the Discussion on GitHub**](https://github.com/dof-initiative/oshw-pm-user-stories/issues?q=is%3Aissue%20state%3Aopen%20-label%3Ahousekeeping)
 
 ---
 
@@ -80,4 +80,4 @@ A: Yes, there are a couple of example projects using the legacy tooling:
 
 A: Yes: 
 - [Discord](#) (Coming Soon)
-- [**GitHub Issues**](https://github.com/Mach30/dof/issues)
+- [**GitHub Issues**](https://github.com/dof-initiative/oshw-pm-user-stories/issues?q=is%3Aissue%20state%3Aopen%20-label%3Ahousekeeping)
