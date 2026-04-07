@@ -56,7 +56,7 @@ Contribute ideas, code, and feedback.  [**Join the Discussion on GitHub**](https
 
 **Q: What is the value of OSHWA certification and how does the DOF support it?**  
 
-A: OSHWA (Open Source Hardware Association) certification helps the community identify hardware projects that meet the widely accepted definition of open source hardware. The DOF methodology was developed to align with this [definition](https://oshwa.org/resources/open-source-hardware-definition/) and support the [requirements of the OSHW community](https://mach30.github.io/oshw-pm-user-stories/).
+A: OSHWA (Open Source Hardware Association) certification helps the community identify hardware projects that meet the widely accepted definition of open source hardware. The DOF methodology was developed to align with this [definition](https://oshwa.org/resources/open-source-hardware-definition/) and support the [requirements of the OSHW community](https://dof-initiative.github.io/oshw-pm-user-stories/).
 
 **Q: Is the DOF a tool?**  
 
