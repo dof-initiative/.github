@@ -5,24 +5,24 @@
 
 ---
 
-## Using the DOF unlocks OSHW's potential
+## Use the DOF to unlock OSHW's potential
 
-Open source software (OSS) development benefits from several key practices and infrastructures that, without a framework like the DOF, are largely missing or fragmented in OSHW development. The DOF can impact OSHW projects by offering solutions to problems impacting collaboration, documentation standards, modularity, and portability.
+Open source software (OSS) has decades of accumulated practice: collaboration workflows, documentation conventions, modularity patterns, and flexible tooling. Without a framework like the DOF, OSHW projects largely can't participate in any of that. The DOF is our answer to that gap, a way to treat hardware source the way OSS treats code, so the same solutions start applying.
 
-### Improves collaboration for project maintainers and contributors
+### Improve collaboration for project maintainers and contributors
 
-Standardized structure and documentation practices, achieved by modeling hardware projects with YAML, make it easy to see and review changes between versions (diffability). This lowers the barrier for new contributors to participate, and allows project maintainers to easily review and incorporate community contributions.
+In OSS, contributors and maintainers work through diffs, you see exactly what changed, review it, and merge it. It works because source code is text, and text is diffable. OSHW projects historically haven't had an equivalent. The DOF structures hardware project data so that changes between versions are visible and reviewable in the same way, through diffs. 
 
-### Achieves greater documentation standards
-Software development leverages README files, changelogs, and structured documentation that are versioned alongside the code. In contrast, hardware projects are often plagued by fragmented documentation, updated haphazardly, making it difficult to track design decisions and changes across versions and dependencies between related projects. By treating projects as source code, it becomes possible to use these standards and versioning tools in hardware projects. 
+### Achieve greater documentation standards
+In software, the README, changelog, and structured docs live right alongside the code and are versioned with it, keeping documentation drift in check. Yet in hardware we see docs as separate files, updated inconsistently, with no clear record of why a design decision was made or what changed between versions. By modeling hardware projects as source, docs belong in the repo, they version alongside the design, and the history of the project becomes legible.
 
-### Empowers reuse and modularity
+### Get reuse and modularity
 
-The DOF addresses the need for reuse and modularity in hardware development. For example, in a 3D printer project, a subcomponent such as an extruder can be maintained in a standalone repository. Since the same extruder might be used across different 3D printer projects (for example, D3D-Pro and D3D-Universal), treating the extruder as its own “package” means you can manage it independently. Other projects can then easily “import” the extruder repo as a dependency, much like package management in software development. Note that managing subcomponents in their own standalone repositories is optional.
+In software, if a library solves a problem well, you don't copy-paste it into every project that needs it, you declare it as a dependency and pull it in. Hardware hasn't had a clean equivalent to this. The DOF introduces composability for hardware: a subcomponent like a 3D printer extruder can live in its own standalone repository and be treated as a package. Multiple projects (say, D3D-Pro and D3D-Universal) can both depend on it independently, get updates when it improves, and contribute back to a single shared design. Managing subcomponents this way is optional, but it's what makes a hardware ecosystem rather than a pile of one-off projects.
 
-### Maintains portability
+### Maintain portability
 
-Although the reference implementation tooling uses git, npm, and gradle, the methodology is tool-agnostic as to allow for migration to other version control, package management, and build tools.
+We provide reference implementation tooling that uses git, npm, and gradle However, the methodology is tool-agnostic and can be migrated to other version control, package management, and build tools. Our documentation contains everything a developer needs to use their own stack. 
 
 *Our approach was driven by feedback from the community. See our [user stories & community feedback](https://dof-initiative.github.io/oshw-pm-user-stories)*.
 
@@ -40,7 +40,7 @@ Dr. Simmons discusses the Mach 30's Shepard Test Stand as a case study demonstra
 To advance the adoption and effectiveness of the DOF, we are actively developing and maintaining several complementary projects, each addressing a key aspect of DOF documentation, modeling, and tool support.
 - [Mach 30 Distributed OSHW Framework Workspace (Kasm Image)](https://github.com/dof-initiative/kasm-dof-workspace) - This Kasm workspace is set up with all DOF tooling. Use of the workspace recommended for Mach 30 volunteers and contributors, as it ensures a consistent, reproducible developer environment. 
 - [DOF Repository](https://github.com/dof-initiative/dof-legacy): The legacy implementation and reference for the Distributed OSHW Framework (DOF) methodology itself. This repository documents the principles, workflows, and best practices for DOF, serving both as a historical artifact and a foundation for ongoing tool and process development.
-- [yaml-datastore](https://github.com/dof-initiative/yaml-datastore): Tool for managing distributed YAML content. Developed to meet the needs of m30ml, which requires handling of data spread across multiple YAML files and directories.
+- [yaml-datastore](https://github.com/dof-initiative/yaml-datastore): The library for storing and manipulating data across multiple YAML files. Developed to meet the needs of m30ml, which requires handling of data spread across multiple YAML files and directories.
 - [m30ml](https://github.com/dof-initiative/m30ml): A  lightweight YAML-based MBSE modeling language, loosely inspired by SysML v2, but intended for filesystem use. To support complex projects, m30ml relies on modular data management across multiple YAML files and directories, an approach made possible by the development of yaml-datastore.
 - [m30pm](https://github.com/dof-initiative/m30pm): Minimum viable tooling to support defining and executing the next generation of the methodology (to be defined using a domain specific LinkML schema). CRUDs schemas and data described in m30ml.
 - [linkml schema](https://github.com/dof-initiative/linkml-schema): Fork of linkml schema to make it compatible with npm.
@@ -56,7 +56,7 @@ Contribute ideas, code, and feedback.  [**Join the Discussion on GitHub**](https
 
 **Q: What is the value of OSHWA certification and how does the DOF support it?**  
 
-A: OSHWA (Open Source Hardware Association) certification helps the community identify hardware projects that meet the widely accepted definition of open source hardware. The DOF methodology was developed to align with this [definition](https://oshwa.org/resources/open-source-hardware-definition/) and support the [requirements of the OSHW community](https://mach30.github.io/oshw-pm-user-stories/).
+A: OSHWA (Open Source Hardware Association) certification helps the community identify hardware projects that meet the widely accepted definition of open source hardware. The DOF methodology was developed to align with this [definition](https://oshwa.org/resources/open-source-hardware-definition/) and support the [requirements of the OSHW community](https://dof-initiative.github.io/oshw-pm-user-stories/).
 
 **Q: Is the DOF a tool?**  
 
