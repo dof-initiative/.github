@@ -38,17 +38,21 @@ Dr. Simmons discusses the Mach 30's Shepard Test Stand as a case study demonstra
 
 ## Projects in Development
 To advance the adoption and effectiveness of the DOF, we are actively developing and maintaining several complementary projects, each addressing a key aspect of DOF documentation, modeling, and tool support.
-- [Mach 30 Distributed OSHW Framework Workspace (Kasm Image)](https://github.com/dof-initiative/kasm-dof-workspace) - This Kasm workspace is set up with all DOF tooling. Use of the workspace recommended for Mach 30 volunteers and contributors, as it ensures a consistent, reproducible developer environment. 
-- [DOF Repository](https://github.com/dof-initiative/dof-legacy): The legacy implementation and reference for the Distributed OSHW Framework (DOF) methodology itself. This repository documents the principles, workflows, and best practices for DOF, serving both as a historical artifact and a foundation for ongoing tool and process development.
 - [yaml-datastore](https://github.com/dof-initiative/yaml-datastore): The library for storing and manipulating data across multiple YAML files. Developed to meet the needs of m30ml, which requires handling of data spread across multiple YAML files and directories.
-- [m30ml](https://github.com/dof-initiative/m30ml): A  lightweight YAML-based MBSE modeling language, loosely inspired by SysML v2, but intended for filesystem use. To support complex projects, m30ml relies on modular data management across multiple YAML files and directories, an approach made possible by the development of yaml-datastore.
+- m30ml: A lightweight YAML-based MBSE modeling language, to create structured ontologies (e.g. user stories, activities) needed for DOF. Loosely inspired by SysML v2, but intended for filesystem use. To support CRUD operations for complex projects, m30ml will use yaml-datastore.
 - [m30pm](https://github.com/dof-initiative/m30pm): Minimum viable tooling to support defining and executing the next generation of the methodology (to be defined using a domain specific LinkML schema). CRUDs schemas and data described in m30ml.
 - [linkml schema](https://github.com/dof-initiative/linkml-schema): Fork of linkml schema to make it compatible with npm.
 
+## Legacy projects for Reference
+- [DOF Repository](https://github.com/dof-initiative/dof-legacy): The legacy implementation and reference for the Distributed OSHW Framework (DOF) methodology itself. This repository documents the principles, workflows, and best practices for DOF, serving both as a historical artifact and a foundation for ongoing tool and process development.
+- [m30ml](https://github.com/dof-initiative/m30ml-legacy): The legacy specification and reference for m30ml models. The spec folder contains historical examples of structured ontologies we could support.
+  
 ---
 
 ## Ready to build the future of OSHW?
 Contribute ideas, code, and feedback.  [**Join the Discussion on GitHub**](https://github.com/dof-initiative/oshw-pm-user-stories/issues?q=is%3Aissue%20state%3Aopen%20-label%3Ahousekeeping)
+
+[Mach 30 Distributed OSHW Framework Workspace (Kasm Image)](https://github.com/dof-initiative/kasm-dof-workspace) - This Kasm workspace is set up with all DOF tooling. Use of the workspace recommended for Mach 30 volunteers and contributors, as it ensures a consistent, reproducible developer environment. 
 
 ---
 
