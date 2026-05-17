@@ -22,7 +22,7 @@ In software, if a library solves a problem well, you don't copy-paste it into ev
 
 ### Maintain portability
 
-We provide reference implementation tooling that uses git, npm, and gradle However, the methodology is tool-agnostic and can be migrated to other version control, package management, and build tools. Our documentation contains everything a developer needs to use their own stack. 
+We provide reference implementation tooling that uses git, npm, and gradle. However, the methodology is tool-agnostic and can be migrated to other version control, package management, and build tools. Our documentation contains everything a developer needs to use their own stack. 
 
 *Our approach was driven by feedback from the community. See our [user stories & community feedback](https://dof-initiative.github.io/oshw-pm-user-stories)*.
 
